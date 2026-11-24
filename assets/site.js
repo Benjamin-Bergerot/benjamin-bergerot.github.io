@@ -59,6 +59,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (ok) n++;
       });
       if (counter) counter.textContent = n + ' of ' + items.length + ' shown';
+      box.querySelectorAll('h3.grp').forEach(function (h) {
+        var el = h.nextElementSibling, any = false;
+        while (el && !el.matches('h3.grp')) { if (el.style.display !== 'none') any = true; el = el.nextElementSibling; }
+        h.style.display = any ? '' : 'none';
+      });
     }
     if (input) input.addEventListener('input', apply);
     buttons.forEach(function (bt) {

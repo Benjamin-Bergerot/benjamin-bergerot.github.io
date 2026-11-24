@@ -260,3 +260,6 @@ img.av{object-fit:cover;background:none}
 .stats.head .stat span{font-size:16px}
 a.stat.link{position:relative}
 a.stat.link::after{content:"\2192";position:absolute;top:18px;right:20px;color:var(--accent-text);font-size:18px}
+.listbox h3.grp{font-family:var(--serif);font-weight:500;font-size:22px;margin:22px 0 6px;padding-top:14px;border-top:1px solid var(--line)}
+.listbox h3.grp:first-child{border-top:0;padding-top:6px;margin-top:8px}
+.listbox h3.grp span{font-family:var(--sans);font-size:13px;color:var(--muted);background:var(--card);border-radius:999px;padding:1px 9px;vertical-align:4px;margin-left:6px}
