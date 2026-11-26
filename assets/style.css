@@ -280,3 +280,10 @@ a.stat.link::after{content:"\2192";position:absolute;top:18px;right:20px;color:v
 .vid-row .video{max-width:560px;margin:0;flex:1}
 .plogo.round{width:120px;flex-shrink:0}
 @media (max-width:640px){.vid-row{flex-direction:column;align-items:flex-start}.vid-row .video{width:100%}.proj-logo{float:none;margin:0 0 12px}}
+.portrait-wrap{margin:0;justify-self:end;text-align:center}
+.portrait-wrap .portrait{justify-self:auto}
+.portrait-wrap figcaption{font-size:11px;color:rgba(238,240,236,.75);margin-top:8px;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+@media (max-width:860px){.portrait-wrap{justify-self:start;order:-1}}
+.portrait{position:relative;overflow:hidden}
+.pcredit{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.pcredit text{font-family:var(--sans);font-size:10px;letter-spacing:1px;fill:rgba(255,255,255,.88);paint-order:stroke;stroke:rgba(0,0,0,.45);stroke-width:2.2px}
